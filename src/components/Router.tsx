@@ -1,15 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "pages/Home";
-import About from "pages/About";
+import { Main, Demo } from "pages";
 
 const AppRouter = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
+          <Route path="/" element={<Main />} />
+          <Route path="demo" element={<Demo />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
