@@ -7,8 +7,11 @@ const AppRouter = () => {
     <>
       <BrowserRouter>
         <Routes>
+          {/* 404 */}
+          {/* <Route path="*" element={<NotFound />} /> */}
           <Route path="/" element={<Main />} />
           <Route path="demo" element={<Demo />} />
+          {/* Redirect */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
