@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
     ::-webkit-scrollbar {
         display: none;
     }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     button {
         background: none;
         border: none;
