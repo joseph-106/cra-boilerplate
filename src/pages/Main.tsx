@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Main = () => {
-  return <>Main</>;
+  return <Link to={"/demo"}>Demo</Link>;
 };
 
 export default Main;
